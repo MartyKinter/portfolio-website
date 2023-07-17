@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
-const config = require('./config');
 
 
 const PORT = process.env.PORT || 5001;
@@ -21,14 +20,14 @@ app.post('/', (req, res) =>{
     const transporter = nodemailer.createTransport({
         service:'gmail',
         auth:{
-            user: config.user,
-            pass: config.pass
+            user: process.env.USER,
+            pass: process.env.PASS
         }
     })
 
     const mailOptions = {
         from: req.body.email,
-        to: 'kinter.marty@yahoo.com',
+        to: process.env.TO_EMAIL,
         subject: `contact form message from ${req.body.email}`,
         text: req.body.message
     }
