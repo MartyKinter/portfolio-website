@@ -3,6 +3,7 @@ const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 
+
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
@@ -28,6 +29,13 @@ function linkAction(){
     navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+/*==================== ABOUT FLIPPER ====================*/
+const aboutImg = document.querySelector('.about__img');
+
+aboutImg.addEventListener('click', (e) => {
+  e.target.classList.toggle("flipped");
+});
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content')
