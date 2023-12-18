@@ -76,7 +76,7 @@ body.dark-theme {
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 25%);
+  --body-color: hsl(var(--hue-color), 88%, 20%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
@@ -144,6 +144,8 @@ img {
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
+
+        line-height: 1.2em;
 }
 
 .section__subtitle {
@@ -392,6 +394,7 @@ img {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
+  
 }
 .about__info-name {
   font-size: var(--smaller-font-size);

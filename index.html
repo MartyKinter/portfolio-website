@@ -86,35 +86,162 @@
                     </div>
                 </div>
             </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My introduction</span>
-
-                <div class="about__container container grid">
-                    <img src="assets/img/about-gif.gif" alt="" class="about__img">
-                    <div class="about__data">
-                        <p class="about__description">
-                            I'm a passionate full-stack web developer who's always up for a challenge. 
-                            I recently completed a comprehensive coding bootcamp at the University of South Florida
-                            to further enhance my skills and knowledge.
-                        </p>
-                        <br>
-                        <p class="about__description">
-                            Through a combination of hands-on experience, ongoing education, and a genuine enthusiasm for problem-solving, 
-                            I am committed to delivering efficient, and scalable solutions that meet the unique needs of each project.
-                        </p>       
-                        <br>                 
-
-                        <div class="about__buttons">
-                            <a target="_blank" href="assets/pdf/resume.pdf" class="button button--flex">
-                               View Resume <i class="uil uil-download-alt button__icon"></i>
-                            </a>
+                        <!--==================== ABOUT ====================-->
+                        <section class="about section" id="about">
+                            <h2 class="section__title">About Me</h2>
+                            <span class="section__subtitle">My introduction</span>
+                        
+                            <div class="about__container container grid">
+                                <img src="assets/img/about-gif.gif" alt="" class="about__img">
+                                <div class="about__data">
+                                    <p class="about__description">
+                                        I'm a passionate full-stack web developer who's always up for a challenge.
+                                        I recently completed a comprehensive coding bootcamp at the University of South Florida
+                                        to further enhance my skills and knowledge.
+                                    </p>
+                                    <br>
+                                    <p class="about__description">
+                                        Through a combination of hands-on experience, ongoing education, and a genuine enthusiasm for
+                                        problem-solving,
+                                        I am committed to delivering efficient, and scalable solutions that meet the unique needs of each
+                                        project.
+                                    </p>
+                                    <br>
+                        
+                                    <div class="about__buttons">
+                                        <a target="_blank" href="assets/pdf/resume.pdf" class="button button--flex">
+                                            View Resume <i class="uil uil-download-alt button__icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">My recent work</span>
+            
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/ChatterBox-gif.gif" alt="" class="portfolio__img">
+            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ChatterBox chat app</h3>
+                                <p class="portfolio__description">Real-time chat app with websockets, user authentication and
+                                    password encryption
+                                </p>
+                                <div class="language__icons">
+                                    <i class="devicon-react-original colored"></i>
+                                    <i class="devicon-nodejs-plain colored"></i>
+                                    <i class="devicon-postgresql-plain-wordmark colored"></i>
+                                    <i class="devicon-tailwindcss-plain colored"></i>
+            
+                                </div>
+            
+                                <a href="https://chatterbox-5gn5.onrender.com/" target="_blank"
+                                    class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                                <a href="https://github.com/MartyKinter/ChatterBox" target="_blank"
+                                    class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/warbler-gif.gif" alt="" class="portfolio__img">
+            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Twitter Clone</h3>
+                                <p class="portfolio__description">Twitter clone with user authentication,
+                                    password encryption, posts and search functionality. Hosted on render.com
+                                </p>
+                                <div class="language__icons">
+                                    <i class="devicon-python-plain colored"></i>
+                                    <i class="devicon-flask-original-wordmark"></i>
+                                    <i class="devicon-sqlalchemy-plain"></i>
+            
+                                </div>
+            
+                                <a href="https://warbler-mk.onrender.com/" target="_blank"
+                                    class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                                <a href="https://github.com/MartyKinter/warbler" target="_blank"
+                                    class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/jobly-gif.gif" alt="" class="portfolio__img">
+            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Job board backend API</h3>
+                                <p class="portfolio__description">JSON API for job site with JWT authentication,
+                                    routes for users, companies and jobs.
+                                </p>
+                                <div class="language__icons">
+                                    <i class="devicon-nodejs-plain colored"></i>
+                                    <i class="devicon-express-original"></i>
+            
+                                </div>
+                                <a href="https://github.com/MartyKinter/express-jobly" target="_blank"
+                                    class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+            
+                            </div>
+                        </div>
+            
+                        <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/meme-gen.gif" alt="" class="portfolio__img">
+            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Meme generator</h3>
+                                <p class="portfolio__description">React meme generator using image api</p>
+                                <div class="language__icons">
+                                    <i class="devicon-react-original colored"></i>
+                                </div>
+                                <a href="https://memegen-qvya.onrender.com/" target="_blank"
+                                    class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                                <a href="https://github.com/MartyKinter/react-meme-generator" target="_blank"
+                                    class="button button--flex button--small portfolio__button">
+                                    Github
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+            
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+            
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
+
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
@@ -247,6 +374,16 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="language__icon"><i class="devicon-mongodb-plain-wordmark colored"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
                                         <h3 class="skills__name">SQLAlchemy</h3>
                                         <span class="language__icon bigger"><i class="devicon-sqlalchemy-plain"></i>
                                         </span>
@@ -256,125 +393,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">My recent work</span>
-
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/ChatterBox-gif.gif" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">ChatterBox chat app</h3>
-                                <p class="portfolio__description">Real-time chat app with websockets, user authentication and 
-                                    password encryption
-                                </p>
-                                <div class="language__icons">
-                                    <i class="devicon-react-original colored"></i>
-                                    <i class="devicon-nodejs-plain colored"></i>                                    
-                                    <i class="devicon-postgresql-plain-wordmark colored"></i>
-                                    <i class="devicon-tailwindcss-plain colored"></i>
-
-                                </div>
-
-                                <a href="https://chatterbox-5gn5.onrender.com/" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Site
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/MartyKinter/ChatterBox" target="_blank" class="button button--flex button--small portfolio__button">
-                                    Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/warbler-gif.gif" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Twitter Clone</h3>
-                                <p class="portfolio__description">Twitter clone with user authentication, 
-                                    password encryption, posts and search functionality. Hosted on render.com
-                                </p>
-                                <div class="language__icons">
-                                    <i class="devicon-python-plain-wordmark"></i>
-                                    <i class="devicon-flask-original-wordmark"></i>
-                                    <i class="devicon-sqlalchemy-plain"></i>
-
-                                </div>
-
-                                <a href="https://warbler-mk.onrender.com/" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Site
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/MartyKinter/warbler" target="_blank" class="button button--flex button--small portfolio__button">
-                                    Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/jobly-gif.gif" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Job board backend API</h3>
-                                <p class="portfolio__description">JSON API for job site with JWT authentication, 
-                                    routes for users, companies and jobs.
-                                </p>
-                                <div class="language__icons">
-                                    <i class="devicon-nodejs-plain colored"></i>                                    
-                                    <i class="devicon-express-original"></i>
-
-                                </div>
-                                <a href="https://github.com/MartyKinter/express-jobly" target="_blank" class="button button--flex button--small portfolio__button">
-                                    Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 4 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/meme-gen.gif" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Meme generator</h3>
-                                <p class="portfolio__description">React meme generator using image api</p>
-                                <div class="language__icons">
-                                    <i class="devicon-react-original colored"></i>
-                                </div>
-                                <a href="https://memegen-qvya.onrender.com/" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Site
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/MartyKinter/react-meme-generator" target="_blank" class="button button--flex button--small portfolio__button">
-                                    Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
