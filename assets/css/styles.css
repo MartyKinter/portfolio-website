@@ -166,6 +166,12 @@ img {
   margin-right: var(--mb-1-5);
 }
 
+.container2 {
+  max-width: 900px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -477,7 +483,8 @@ img {
   padding: 0 1.5rem;
 }
 .portfolio__img {
-  width: 265px;
+  /* width: 265px; */
+  justify-content: center;
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -648,6 +655,10 @@ img {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+  .container2 {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
   .nav__menu {
     padding: 2rem 0.25rem 4rem;
   }
@@ -698,6 +709,10 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container2 {
     margin-left: auto;
     margin-right: auto;
   }
@@ -778,7 +793,8 @@ img {
   }
 
   .portfolio__img {
-    width: 320px;
+    /* width: 320px; */
+    justify-content: center;
   }
   .portfolio__content {
     align-items: center;
