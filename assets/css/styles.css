@@ -139,13 +139,13 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
-} 
+}
 
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
 
-        line-height: 1.2em;
+  line-height: 1.2em;
 }
 
 .section__subtitle {
@@ -199,6 +199,9 @@ img {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+.nav__logo {
+  font-size: larger;
+}
 .nav__logo:hover {
   color: var(--first-color);
 }
@@ -222,7 +225,7 @@ img {
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
   }
-  .contact__button{
+  .contact__button {
     margin-left: 1.5rem;
   }
 }
@@ -235,7 +238,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -378,8 +381,8 @@ img {
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
-    transform-style: preserve-3d;
-      transition: transform 1s;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 .flipped {
   transform: rotateY(180deg);
@@ -403,7 +406,6 @@ img {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
-  
 }
 .about__info-name {
   font-size: var(--smaller-font-size);
@@ -588,7 +590,7 @@ img {
 }
 .footer__title {
   font-size: var(--h1-font-size);
-  margin-bottom: -.2rem;
+  margin-bottom: -0.2rem;
 }
 .footer__subtitle {
   font-size: var(--small-font-size);
@@ -596,7 +598,7 @@ img {
 .footer__links {
   display: flex;
   flex-direction: column;
-  row-gap: .5rem;
+  row-gap: 0.5rem;
 }
 .footer__link:hover {
   color: var(--first-color-lighter);
@@ -826,7 +828,7 @@ img {
     padding: 0;
   }
 
-  .footer__container{
+  .footer__container {
     padding: 1rem;
   }
 
@@ -886,12 +888,17 @@ img {
   border-width: 0;
   box-sizing: border-box;
   border: 1px solid var(--first-color-alt);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem;
   background-color: var(--first-color);
-  background-image: radial-gradient(75% 25% at 50% 95%, rgba(255, 255, 255, 0.2), transparent);
+  background-image: radial-gradient(
+    75% 25% at 50% 95%,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   color: #fafafa;
-  box-shadow: inset 0 0 2px 2px rgba(255, 255, 255, 0.2), 0 1px 4px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 2px 2px rgba(255, 255, 255, 0.2),
+    0 1px 4px 2px rgba(0, 0, 0, 0.1);
   transition-property: border-color, transform, background-color;
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.55, 1, 0.15, 1);
