@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 
 const PORT = process.env.PORT || 5001;
 
@@ -14,12 +18,13 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
   console.log(req.body);
-  console.log(process.env.USERNAME);
+  console.log(process.env.USER);
+  console.log(process.env.PASS);
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.USER,
+      user: process.env.USERNAME,
       pass: process.env.PASS,
     },
   });
